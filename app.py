@@ -6,7 +6,7 @@ import streamlit as st
 
 #function for response
 def load_answer(question):
-    llm=OpenAI(model_name="gpt-3.5-turbo", temperature=0)
+    llm=OpenAI(model_name="text-davinci-003", temperature=0)
     answer=llm(question)
     return answer
 
